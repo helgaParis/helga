@@ -1,0 +1,22 @@
+body {
+    background-color: lavenderblush;
+}
+#center {
+    background-color: darkseagreen;
+    display: block;
+    position: absolute;
+    width: 40%;
+    height: 40%;
+    right: 30%;
+    bottom: 20%;
+}
+#a #b #c #d {
+    background-color: grey;
+    width: 15%;
+    height: 20%;
+    position: absolute;
+}
+#a {
+    right: 10%;
+    bottom: %;
+}
