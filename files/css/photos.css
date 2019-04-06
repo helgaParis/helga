@@ -1,0 +1,28 @@
+.diaporama {
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+    width: 60%;
+}
+
+.diaporama img {
+    position: absolute;
+    width: 100%;
+}
+
+.diaporama img:not(:first-of-type),
+.diaporama p:not(:first-of-type) {
+    display: none;
+}
+
+.diaporama p {
+    background-color: rgba(128,128,128,0.8);
+    bottom: 0;
+    color: #fff;
+    margin: 0;
+    padding: 10px 0;
+    position: absolute;
+    text-align: center;
+    width: 100%;
+    z-index: 2;
+}

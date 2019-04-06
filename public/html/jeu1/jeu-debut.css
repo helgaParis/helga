@@ -1,0 +1,281 @@
+/* Styles en commun */
+
+
+body{
+    background-color: #fffbeb;
+    font-size: 1rem;
+    font-family:  fantasy;
+}
+a {
+   color: #A90101;
+}
+a:hover {
+    color : black;
+}
+a:active {
+    color : #0000CC;
+}
+a:visited {
+   color: #A90101;
+}
+
+h1{
+    color: #A90101;
+    font-size: 1.2rem;
+    font-stretch:  expanded;
+    text-align:  center;
+}
+header p{
+    font-size: 0.8rem;
+    text-align: right;
+    margin-right:5%;
+    }
+/*...contient la scene=stage et les annonces temporaires ....*/
+
+section {
+    margin: auto;
+    width:90%;
+    height: auto;
+}
+#stage {
+    position: relative;
+}
+
+canvas {
+    position: absolute;
+}
+
+#myCanvasBg {  
+    border:1px solid #A90101; 
+    background-color:#fffbeb;;
+    z-index:2;
+} 
+
+#myCanvasMg {
+    z-index:4;
+} 
+
+#myCanvasFg {
+    z-index:3;
+} 
+    
+#temp {
+    position: absolute;
+    display:  none;
+    z-index: 10;
+    margin-left: 20%;
+    margin-top:10%;
+}
+#temp2 {
+    position: absolute;
+    display:  none;
+    z-index: 10;
+    margin-left: 30%;
+    margin-top:9%;
+    width: 60%;
+    height: 50%;
+}
+
+#rT {
+    font-family: 'Open Sans', sans-serif;  
+    font-weight: 600;
+}
+#r1>p #r2>p{
+    font-family: 'Open Sans Condensed, sans-serif';
+    font-weight: 300;
+}
+
+#faster {
+    font-size: 0.8rem;
+    background-color:  #A90101; 
+    color: white;
+    position : absolute;
+    display : block;
+    width : 15%;
+    z-index: 5;
+}
+#suite {
+    display: none;
+  
+    width: 100%;
+    height: 400px;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+    background-color:orange;
+    color:  #0000CC;
+    font-size: 2rem;
+}
+
+@media only screen and (max-width: 600px) {
+    #myCanvasFg {width :100%;}
+    #myCanvasBg {width :100%;}
+    #myCanvasMg {width :100%;}
+    #temp {
+        margin-left: 3%;
+        margin-top:10%; 
+    }
+    #temp2 {
+        margin-left: 27%;
+        margin-top:6%;
+        width: 75%;
+    }
+    
+    #rT {
+        font-family: 'Open Sans', sans-serif;  
+        font-weight: 400;
+    }
+    #r1>p #r2>p{
+        font-family: 'Open Sans Condensed, sans-serif';
+        font-weight: 300;
+    }
+    #faster {
+        bottom: 0%;
+        right: 0%;
+    }
+  }
+
+@media only screen and (min-width: 600px) {
+    header p{
+        font-size: 0.9rem;
+        margin-right:10%;
+        }
+    #myCanvasFg {width :95%;}
+    #myCanvasBg {width :95%;}
+    #myCanvasMg {width :95%;}
+    #temp {
+        margin-left: 5%;
+        margin-top:10%; 
+    }
+    #temp2 {
+        margin-left: 27%;
+        margin-top:7%;
+        width: 75%;
+    }
+    
+    #rT {
+        font-family: 'Open Sans', sans-serif;  
+        font-weight: 400;
+    }
+    #r1>p #r2>p{
+        font-family: 'Open Sans Condensed, sans-serif';
+        font-weight: 400;
+    }
+    #faster {
+        bottom: 0;
+        right: 5%;
+    }
+  }
+  
+  /* Medium devices (landscape tablets, 768px and up) */
+  @media only screen and (min-width: 768px) {
+   /* body {background: blue;}*/
+    header p{
+        font-size: 1rem;
+        margin-right:14%;
+        }
+    h1 {
+        line-height: 3rem;
+    }
+    #myCanvasFg {width :90%;}
+    #myCanvasBg {width :90%;}
+    #myCanvasMg {width :90%;}
+    #temp {
+        margin-left: 10%;
+        margin-top:10%; 
+    }
+    #temp2 {
+        margin-left: 30%;
+        margin-top:9%;
+        width: 75%;
+    }
+    #rT {
+        font-family: 'Open Sans', sans-serif;  
+        font-weight: 600;
+    }
+    #r1>p #r2>p{
+        font-family: 'Open Sans Condensed, sans-serif';
+        font-weight: 400;
+    }
+    #faster {
+        bottom: 10%;
+        right: 20%;
+    }
+  } 
+  
+  /* Large devices (laptops/desktops, 992px and up) */
+  @media only screen and (min-width: 992px) {
+   /* body {background: orange;}*/
+    header p{
+        font-size: 1rem;
+        margin-right:15%;
+        }
+    #myCanvasFg {width :90%;}
+    #myCanvasBg {width :90%;}
+    #myCanvasMg {width :90%;}
+    #temp {
+        margin-left: 10%;
+        margin-top:10%; 
+    }
+    #temp2 {
+        margin-left: 27%;
+        margin-top:8%;
+        width: 75%;
+    }
+    #rT {
+        font-family: 'Open Sans', sans-serif;  
+        font-weight: 600;
+    }
+    #r1>p #r2>p{
+        font-family: 'Open Sans Condensed, sans-serif';
+        font-weight: 400;
+    }
+    #faster {
+        bottom: 20%;
+        right: 20%;
+    }
+  } 
+  
+  /* Extra large devices (large laptops and desktops, 1200px and up) */
+  @media only screen and (min-width: 1200px) {
+   /* body {background: pink;}*/
+    header p{
+        font-size: 1.2rem;
+        margin-right:15%;
+        }
+    #myCanvasFg {
+        width :90%;
+        max-width :1200px;
+    }
+    #myCanvasBg {
+        width :90%;
+        max-width :1200px;
+    }
+    #myCanvasMg {
+        width :90%;
+        max-width :1200px;
+    }
+    #temp {
+        margin-left: 15%;
+        margin-top:15%; 
+    }
+    #temp2 {
+        margin-left: 30%;
+        margin-top:14%;
+        width: 75%;
+    }
+    #rT {
+        font-family: 'Open Sans', sans-serif;  
+        font-weight: 600;
+    }
+    #r1>p #r2>p{
+        font-family: 'Open Sans Condensed, sans-serif';
+        font-weight: 400;
+    }
+    #faster {
+        bottom: 30%;
+        right: 30%;
+    }
+  }
+
+

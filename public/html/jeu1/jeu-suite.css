@@ -1,0 +1,164 @@
+/* Styles en commun */
+
+
+body{
+    background-color: #fffbeb;
+    font-size: 1rem;
+    font-family:  fantasy;
+    text-align: center;
+}
+a {
+   color: #A90101;
+}
+a:hover {
+    color : black;
+}
+a:active {
+    color : #0000CC;
+}
+a:visited {
+   color: #A90101;
+}
+footer {
+    position : absolute;
+    display : block;
+    width : 100%;
+    bottom : 0;
+    }
+
+
+
+/*...contient la scene=stage et les jetons ....*/
+
+section {
+    margin: auto;
+    width:800px;
+    margin-left: 100px;
+    height: auto;
+}
+#stage {
+    position: relative;
+    background-image: url("./fond.png");
+    display: block;
+    width: 800px;
+    height: 400px;
+}
+#enseigne {
+    background-color: orange;
+    position: absolute;
+    z-index: 15;
+    border-color:  black;
+    border-style: inset;
+    border-width: 1px 2px 2px 1px;
+    width: 798px;
+    height: 50px;
+}
+#tableau1   {
+    z-index: 11;
+    background-color: greenyellow;
+    position: absolute;
+    border-color:  black;
+    border-style: inset;
+    border-width: 1px 2px 2px 1px;
+    width: 80px;
+    height: 140px;
+}
+#tableau2  {
+    z-index: 12;
+    background-color: yellow;
+    position: absolute;
+    border-color:  black;
+    border-style: inset;
+    border-width: 1px 2px 2px 1px;
+    width: 80px;
+    height: 140px;
+}
+#tableau3   {
+    z-index: 13;
+    background-color: greenyellow;
+    position: absolute;
+    border-color:  black;
+    border-style: inset;
+    border-width: 1px 2px 2px 1px;
+    width: 80px;
+    height: 140px;
+}
+#tableau4 {
+    background-color: lightseagreen;
+    position: absolute;
+    z-index: 14;
+    border-color:  black;
+    border-style: inset;
+    border-width: 1px 2px 2px 1px;
+    width: 120px;
+    height: 80px;
+}
+#logo1   {
+    z-index: 6;
+    background-color: bisque;
+    position: absolute;
+    border-color:  black;
+    border-style: inset;
+    border-width: 1px 2px 2px 1px;
+    width: 80px;
+    height: 20px;
+}
+#logo2   {
+    z-index: 7;
+    background-color: bisque;
+    position: absolute;
+    border-color:  black;
+    border-style: inset;
+    border-width: 1px 2px 2px 1px;
+    width: 80px;
+    height: 20px;
+}
+#logo3   {
+    z-index: 8;
+    background-color: bisque;
+    position: absolute;
+    border-color:  black;
+    border-style: inset;
+    border-width: 1px 2px 2px 1px;
+    width: 80px;
+    height: 20px;
+}
+#logo4   {
+    z-index: 9;
+    background-color: bisque;
+    position: absolute;
+    border-color:  black;
+    border-style: inset;
+    border-width: 1px 2px 2px 1px;
+    width: 80px;
+    height: 20px;
+}
+#logo5   {
+    z-index: 10;
+    background-color: bisque;
+    position: absolute;
+    border-color:  black;
+    border-style: inset;
+    border-width: 1px 2px 2px 1px;
+    width: 80px;
+    height: 20px;
+}
+#resultat   {
+    z-index: 30;
+    background-color: whitesmoke;
+    position: absolute;
+    border: 1px solid #ccc;
+    width: 19px;
+    height: 20px;
+    top: 208px;
+    left: 849px;
+}
+#ok {
+    display: none;
+    width: 80%;
+    background-color:white;
+    color:  #0000CC;
+    font-size: 2rem;
+}
+
+

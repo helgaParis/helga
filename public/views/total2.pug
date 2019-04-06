@@ -1,0 +1,439 @@
+doctype html
+head
+  meta(charset='UTF-8')
+  meta(name='viewport' content='width=device-width, initial-scale=1.0')
+  meta(http-equiv='X-UA-Compatible' content='ie=edge')
+  script(src='js/pages.js')
+  link(rel='stylesheet' href='css/pages.css')
+  link(href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300|Open+Sans:400,600' rel='stylesheet')
+  title Helga Petrovic contact
+  link(rel="shortcut icon" href="images/favicon.ico")
+  style.
+    /* ###########  Valide pour toutes tailles ############### */
+    body {
+    font-family : 'Open Sans', sans-serif;
+    margin : 0;
+    }
+    nav {
+    font-family : 'Open Sans Condensed', sans-serif;
+    font-weight : 300;
+    top : 0;
+    left : 0;
+    background-color : #A90101;
+    display : block;
+    }
+    .menu1 {
+    text-align : left;
+    }
+    nav ul {
+    list-style-type : none;
+    margin : 0;
+    padding : 18px;
+    }
+    nav li {
+    list-style-type : none;
+    }
+    nav a {
+    color : white;
+    text-decoration : none;
+    }
+    nav a:hover {
+    text-decoration : none;
+    color : #E6E6E6;
+    font-family : 'Open Sans', sans-serif;
+    font-weight : 400;
+    }
+    nav a:active {
+    text-decoration : none;
+    font-family : 'Open Sans', sans-serif;
+    font-weight : 400;
+    color : #0000CC;
+    }
+    nav a:visited {
+    text-decoration : none;
+    color : #E6E6E6;
+    }
+    nav > ul > li {
+    position : relative;
+    }
+    nav > div > ul > li:hover .menu2 {
+    display : block;
+    }
+    .menu2 {
+    background-color : #A90101;
+    position : absolute;
+    display : none;
+    min-width : 120px;
+    z-index : 3;
+    }
+    #target {
+    font-weight : 400;
+    }
+    /*complete:  image pleine page target*/
+    #complete {
+    width : 70%;
+    max-width : 600px;
+    height : auto;
+    }
+    /*textes dans la zone target*/
+    #texttarget {
+    padding : 3%;
+    }
+    footer {
+    text-align : center;
+    padding : 5px;
+    font-size : 0.7rem;
+    }
+    /* #######  Valide pour tailles  en dessous de 600 px de large ########## */
+    @media only screen and (max-width:600px) {
+    nav ul {
+    display : inline;
+    margin-left : 5px;
+    padding : 2px;
+    }
+    nav li {
+    display : inline;
+    padding : 3px;
+    }
+    nav span {
+    position : absolute;
+    top : -9px;
+    right : -30px;
+    }
+    #logo {
+    width : 75px;
+    height : 38px;
+    }
+    nav {
+    border-bottom : 1px dotted #0000CC;
+    height : 30px;
+    }
+    .menu2 {
+    padding : 2px;
+    border-radius : 0 0 10px 10px;
+    top : 25px;
+    left : 30px;
+    right : 30px;
+    }
+    .menu2 a {
+    font-family : 'Open Sans Condensed', sans-serif;
+    font-weight : 300;
+    }
+    .menu2 a:active {
+    color : #0000CC;
+    }
+    #target {
+    margin : 0 20px;
+    height : 90%;
+    box-sizing : border-box;
+    }
+    }
+    /* ########  Valide pour tailles entre 600 et 768 ############### */
+    @media only screen and (min-width:600px) {
+    nav div {
+    margin : 3px 5px;
+    }
+    nav ul {
+    display : inline;
+    margin-left : 5px;
+    padding : 5px;
+    }
+    nav li {
+    display : inline;
+    padding : 5px;
+    }
+    nav span {
+    position : absolute;
+    top : 2px;
+    }
+    #logo {
+    width : 75px;
+    height : 38px;
+    }
+    nav {
+    border-bottom : 1px solid #0000CC;
+    height : 42px;
+    }
+    .menu2 {
+    padding : 2px;
+    border-radius : 0 0 10px 10px;
+    top : 25px;
+    left : 30px;
+    right : 30px;
+    }
+    .menu2 a {
+    font-family : 'Open Sans Condensed', sans-serif;
+    font-weight : 300;
+    }
+    .menu2 a:active {
+    color : #0000CC;
+    }
+    #target {
+    margin : 0 20px;
+    height : 90%;
+    min-height : 600px;
+    box-sizing : border-box;
+    }
+    }
+    /* ######## Valide pour tailles  entre 768 et 992 px ############ */
+    /* Medium devices (landscape tablets, 768px and up) */
+    @media only screen and (min-width:768px) {
+    body {
+    font-family : 'Open Sans', sans-serif;
+    font-weight : 400;
+    margin : 3px;
+    }
+    nav {
+    position : absolute;
+    display : block;
+    min-height : 800px;
+    left : 0;
+    width : 130px;
+    background-color : #A90101;
+    }
+    nav div {
+    display : block;
+    left : 12px;
+    padding : 3px;
+    border-left : 2px solid;
+    border-color : #0000CC;
+    min-height : 800px;
+    }
+    .menu1 {
+    text-align : left;
+    }
+    nav li {
+    display : list-item;
+    }
+    nav span {
+    display : block;
+    text-align : center;
+    position : inherit;
+    }
+    #logo {
+    width : 100px;
+    height : 51px;
+    }
+    .menu2 {
+    background-color : #A90101;
+    padding : 2px;
+    border-radius : 0 10px 10px 0;
+    top : 50px;
+    left : 90px;
+    }
+    #target {
+    position : absolute;
+    display : block;
+    margin : 15px;
+    left : 130px;
+    height : 90%;
+    min-width : 80%;
+    box-sizing : border-box;
+    }
+    footer {
+    position : absolute;
+    display : block;
+    width : 100%;
+    bottom : 0;
+    }
+    }
+    /* ####### Valide pour tailles entre 992 et 1200 px########### */
+    /* Large devices (laptops/desktops, 992px and up) */
+    @media only screen and (min-width:992px) {
+    body {
+    font-family : 'Open Sans', sans-serif;
+    font-weight : 400;
+    margin : 3px;
+    }
+    nav {
+    position : absolute;
+    display : block;
+    height : 100%;
+    left : 0;
+    width : 210px;
+    background-color : #A90101;
+    }
+    nav div {
+    position : relative;
+    display : block;
+    left : 30px;
+    padding : 10px;
+    border-left : 2px solid;
+    border-color : #0000CC;
+    height : 100%;
+    }
+    .menu1 {
+    text-align : left;
+    }
+    nav li {
+    display : list-item;
+    }
+    nav span {
+    display : block;
+    position : inherit;
+    left : -15px;
+    }
+    #logo {
+    width : 150px;
+    height : 77px;
+    }
+    .menu2 {
+    background-color : #A90101;
+    padding : 2px;
+    border-radius : 0 10px 10px 0;
+    top : 50px;
+    left : 90px;
+    }
+    #target {
+    position : absolute;
+    display : block;
+    margin : 20px;
+    left : 220px;
+    min-width : 75%;
+    height : 90%;
+    box-sizing : border-box;
+    }
+    footer {
+    position : absolute;
+    display : block;
+    width : 100%;
+    bottom : 0;
+    }
+    }
+    /* ###########  Valide pour tailles larger que 1200 px  ########### */
+    /* Extra large devices (large laptops and desktops, 1200px and up) */
+    @media only screen and (min-width:1200px) {
+    body {
+    font-family : 'Open Sans', sans-serif;
+    font-weight : 400;
+    margin : 3px;
+    }
+    nav {
+    position : absolute;
+    display : block;
+    min-height : 1000px;
+    left : 0;
+    width : 250px;
+    background-color : #A90101;
+    }
+    nav div {
+    position : relative;
+    display : block;
+    left : 60px;
+    padding : 10px;
+    border-left : 2px solid;
+    border-color : #0000CC;
+    min-height : 1000px;
+    }
+    .menu1 {
+    text-align : left;
+    }
+    nav li {
+    display : list-item;
+    }
+    nav span {
+    display : block;
+    position : inherit;
+    left : -30px;
+    }
+    #logo {
+    width : 150px;
+    height : 77px;
+    }
+    .menu2 {
+    background-color : #A90101;
+    padding : 2px;
+    border-radius : 0 10px 10px 0;
+    top : 50px;
+    left : 90px;
+    }
+    #target {
+    position : absolute;
+    display : block;
+    margin : 20px;
+    left : 250px;
+    min-width : 75%;
+    height : 90%;
+    box-sizing : border-box;
+    }
+    footer {
+    position : absolute;
+    display : block;
+    width : 100%;
+    bottom : 0;
+    }
+    }
+    @font-face {
+    font-family : "'Open Sans'";
+    font-style : normal;
+    font-weight : 400;
+    src : local('Open Sans Regular'), local('OpenSans-Regular'), url(https://fonts.gstatic.com/s/opensans/v15/mem8YaGs126MiZpBA-UFVZ0e.ttf) format('truetype');
+    }
+    @font-face {
+    font-family : "'Open Sans'";
+    font-style : normal;
+    font-weight : 600;
+    src : local('Open Sans SemiBold'), local('OpenSans-SemiBold'), url(https://fonts.gstatic.com/s/opensans/v15/mem5YaGs126MiZpBA-UNirkOUuhs.ttf) format('truetype');
+    }
+    @font-face {
+    font-family : "'Open Sans Condensed'";
+    font-style : normal;
+    font-weight : 300;
+    src : local('Open Sans Condensed Light'), local('OpenSansCondensed-Light'), url(https://fonts.gstatic.com/s/opensanscondensed/v12/z7NFdQDnbTkabZAIOl9il_O6KJj73e7Ff1GhDuXMQg.ttf) format('truetype');
+    }
+nav
+  div
+    ul.menu1
+      li
+        a(href='./pages/jeu.html') Qui suis-je?
+      li
+        a(href='./pages/contact.html') Contact
+      li
+        a(href='./pages/services.html') Services
+      li
+        a(href='http://petrovic.ovh/photos/photos-vide.html')
+        | Photos
+        ul.menu2
+          li
+            a(href='http://petrovic.ovh/photos/photos-vide.html') Armada Rouen
+          li
+            a(href='http://petrovic.ovh/photos-vide.html') Implosion
+          li
+            a(href='photo/moab.html') Utah - Moab
+          li
+            a(href='http://petrovic.ovh/photos-vide.html') Fooding
+          li
+            a(href='http://petrovic.ovh/photos-vide.html') Elements
+          li
+            a(href='http://petrovic.ovh/photos/photos-vide.html') Sete
+          li
+            a(href='http://petrovic.ovh/photos/photos-vide.html') 14 Juillet
+          li &agrave; suivre
+      li
+        a(href='./pages/expos.html') Expos
+      li
+        a#stories Stories
+    span
+      img#logo(src='images/helga-rot.gif' alt='logo Helga Strobl')
+section
+  #target
+    #texttarget
+      h1 Informations de contact
+      div
+        p Helga Strobl Petrovic
+        p 7 impasse du Rouet
+        p 75014 Paris
+        p
+          | 06 32 95 40 90,  
+          a(href='mailto:contact@hstrobl.info') contact@hstrobl.info
+        p No SIRET 491 258 141 00010, no d&apos;ordre de la Maison des Artistes: S462947 
+      div
+        h3 Informations sur ce site
+        p
+          | Fournisseur: Le site est h&eacute;berg&eacute; chez OVH.com, 2 rue Kellermann - 59100 Roubaix - France
+        p Responsable du contenu: Helga Strobl 
+        p
+          | Conception, r&eacute;alisation, et droits d&apos;auteurs de photos et visuels: HElga Strobl,
+footer
+  block #resolution 
+  include ../templates/footer.pug
