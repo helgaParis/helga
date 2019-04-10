@@ -75,7 +75,11 @@ text-align : center;
 padding : 5px;
 font-size : 0.7rem;
 }
-
+#illustration {
+    width : 30%;
+    height: auto;
+    margin-right: 15%;
+}
 /* #######  Valide pour tailles  en dessous de 600 px de large ########## */
 
 @media only screen and (max-width:600px) {

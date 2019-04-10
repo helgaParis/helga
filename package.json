@@ -1,6 +1,6 @@
 {
   "name": "helga",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "jeu multiplayer",
   "main": "index.js",
   "scripts": {
@@ -10,14 +10,26 @@
     "type": "git",
     "url": "git+https://github.com/helgaParis/helga.git"
   },
-  "author": "",
+  "author": "Helga Petrovic",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/helgaParis/helga/issues"
   },
   "homepage": "https://github.com/helgaParis/helga#readme",
   "dependencies": {
+    "ansi-colors": "^3.2.4",
+    "body-parser": "^1.18.3",
     "express": "^4.16.4",
-    "socket.io": "^2.2.0"
-  }
+    "express-session": "^1.15.6",
+    "mongo": "^0.1.0",
+    "mongod": "^2.0.0",
+    "socket.io": "^2.2.0",
+    "url": "^0.11.0",
+    "uuid": "^3.3.2"
+  },
+  "devDependencies": {},
+  "keywords": [
+    "atelier",
+    "back"
+  ]
 }

@@ -1,0 +1,2 @@
+{"_id":{"$oid":"5caa29e7688feb08c4aa9be2"},"pseudo":"helga","score":{"$numberInt":"0"},"pw":"6767","couleur":"#A90101"}
+{"_id":{"$oid":"5caa2b4e6e742308c4bb9b0e"},"pseudo":"astrid","score":{"$numberInt":"0"},"pw":"6767","couleur":"#0000CC"}
