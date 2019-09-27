@@ -28,12 +28,7 @@ nav a {
 color : white;
 text-decoration : none;
 }
-nav a:hover {
-text-decoration : none;
-color : #E6E6E6;
-font-family : 'Open Sans', sans-serif;
-font-weight : 400;
-}
+
 nav a:active {
 text-decoration : none;
 font-family : 'Open Sans', sans-serif;
@@ -44,12 +39,20 @@ nav a:visited {
 text-decoration : none;
 color : #E6E6E6;
 }
+nav a:hover {
+    text-decoration : none;
+    color : #E6E6E6;
+    font-family : 'Open Sans', sans-serif;
+    font-weight : 400;
+    }
 nav > ul > li {
 position : relative;
 }
+
 nav > div > ul > li:hover .menu2 {
 display : block;
 }
+
 .menu2 {
 background-color : #A90101;
 position : absolute;
@@ -220,7 +223,7 @@ height : 51px;
 background-color : #A90101;
 padding : 2px;
 border-radius : 0 10px 10px 0;
-top : 50px;
+top : 25px;
 left : 90px;
 }
 #target {
@@ -285,7 +288,7 @@ height : 77px;
 background-color : #A90101;
 padding : 2px;
 border-radius : 0 10px 10px 0;
-top : 50px;
+top : 30px;
 left : 90px;
 }
 #target {
@@ -351,7 +354,7 @@ height : 77px;
 background-color : #A90101;
 padding : 2px;
 border-radius : 0 10px 10px 0;
-top : 50px;
+top : 30px;
 left : 90px;
 }
 #target {

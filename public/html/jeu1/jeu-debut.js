@@ -366,6 +366,7 @@ var tiege = new Lignes(xyLign[4][0], xyLign[4][1],xyLign[4][2],xyLign[4][3]);
  
 var versLeCarreQuiBouge = function() {
     document.getElementById("suite").style.display = "block";
+    document.getElementById("stage").style.display="none";
 };
     
 
